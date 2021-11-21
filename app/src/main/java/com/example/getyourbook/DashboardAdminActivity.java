@@ -31,6 +31,13 @@ public class DashboardAdminActivity extends AppCompatActivity {
                 checkUser();
             }
         });
+
+        binding.addCategoryBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DashboardAdminActivity.this, CategoryAddActivity.class));
+            }
+        });
     }
 
     private void checkUser() {
