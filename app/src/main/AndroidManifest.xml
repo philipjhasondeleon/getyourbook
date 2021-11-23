@@ -3,6 +3,8 @@
     package="com.example.getyourbook">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
 
     <application
         android:allowBackup="true"
@@ -11,12 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
-        <activity android:name=".CategoryAddActivity"></activity>
+        <activity android:name=".PdfAddActivity"></activity>
+        <activity android:name=".CategoryAddActivity" />
         <activity android:name=".DashboardAdminActivity" />
         <activity android:name=".DashboardUserActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity" />
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

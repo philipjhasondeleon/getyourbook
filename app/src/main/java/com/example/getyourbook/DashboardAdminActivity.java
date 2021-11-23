@@ -40,6 +40,7 @@ public class DashboardAdminActivity extends AppCompatActivity {
         loadCategories();
 
 
+        //log out button
         binding.logoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,10 +49,20 @@ public class DashboardAdminActivity extends AppCompatActivity {
             }
         });
 
+        //add category button
         binding.addCategoryBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(DashboardAdminActivity.this, CategoryAddActivity.class));
+            }
+
+        });
+
+        //start pdf
+        binding.addPdFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DashboardAdminActivity.this, PdfAddActivity.class));
             }
         });
     }
