@@ -1,4 +1,4 @@
-package com.example.getyourbook;
+package com.example.getyourbook.models;
 
 public class ModelCategory {
 
